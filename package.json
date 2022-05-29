@@ -21,6 +21,7 @@
     "nodemon": "^2.0.15",
     "npm": "^8.6.0",
     "pg": "^8.7.3",
-    "sequelize": "^6.18.0"
+    "sequelize": "^6.18.0",
+    "swagger-ui-express": "^4.4.0"
   }
 }

@@ -1,8 +1,10 @@
+const { port } = require('pg/lib/defaults');
 const Sequelize = require('sequelize');
 //const sequelize = new Sequelize('database', 'username', 'password', {
-const sequelize = new Sequelize('web2', 'postgres', 'masterkey', {
+const sequelize = new Sequelize('database', 'postgres', 'masterkey', {
     host: 'localhost',
-    dialect: 'postgres'
+    dialect: 'postgres',
+    port : 5432
 });
 
 var db = {};

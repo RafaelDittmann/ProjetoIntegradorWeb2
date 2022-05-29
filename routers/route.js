@@ -2,6 +2,7 @@ const express = require('express');
 const controllerUsuario = require('../controllers/controllerUsuario');
 const controllerReceita = require('../controllers/controllerReceita');
 const controllerCreche = require('../controllers/controllerCreche');
+const controllerAlunos = require('../controllers/controllerAlunos');
 const multer = require('multer');
 const route = express.Router();
 
@@ -46,8 +47,17 @@ route.get("/receitaDelete/:id", controllerReceita.getDelete);
 //Controller Creche
 //Creche-CRUD
 route.get("/crecheCreate", controllerCreche.getCreate);
-route.post("/crecheCreate",upload.single('imagem'),controllerCreche.postCreate);
+//route.post("/crecheCreate",upload.single('imagem'),controllerCreche.postCreate);
 route.get("/crecheList", controllerCreche.getList);
 route.get("/crecheEdit/:id", controllerCreche.getEdit);
-route.post("/crecheEdit",upload.single('imagem'),controllerCreche.postEdit);
+//route.post("/crecheEdit",upload.single('imagem'),controllerCreche.postEdit);
 route.get("/crecheDelete/:id", controllerCreche.getDelete);
+
+//Controller alunos
+//Creche-CRUD
+route.get("/alunoCreate", controllerAlunos.getCreate);
+route.post("/alunoCreate",upload.single('residencia'),controllerAlunos.postCreate);
+route.get("/alunoList", controllerAlunos.getList);
+route.get("/alunoEdit/:id", controllerAlunos.getEdit);
+route.post("/alunoEdit",upload.single('residencia'),controllerAlunos.postEdit);
+route.get("/alunoDelete/:id", controllerAlunos.getDelete);

@@ -1,0 +1,9 @@
+<form action="/receitaEdit" method="POST" enctype="multipart/form-data">
+    <input type="hidden" name="id" value="{{receitas._id}}">
+    <p>Nome do aluno:</p> <input type="text" name="nome" value="{{receitas.nome}}"> 
+    <p>Nome de um dos pais:</p> <input type="text" name="ingredientes" value="{{receitas.pais}}">
+    <p>Endereco:</p> <input type="text" name="preparo" value=" {{receitas.endereco}}">
+    <p>Comprovante de residencia:</p> <input type="file" name="residencia">
+    <br> <br>
+    <input type="submit" value="Editar">
+</form>
