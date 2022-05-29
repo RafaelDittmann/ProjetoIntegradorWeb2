@@ -2,9 +2,9 @@ const Sequelize = require("sequelize");
 const db = require("../config/db_sequelize");
 const path = require("path");
 
-db.sequelize.sync({force: true}).then(() => {
+/*db.sequelize.sync({force: true}).then(() => {
     console.log('{ force: true }');
-});//comentar se não for a primeira vez
+});*///comentar se não for a primeira vez
 
 module.exports = {
   async getLogin(req, res) {
