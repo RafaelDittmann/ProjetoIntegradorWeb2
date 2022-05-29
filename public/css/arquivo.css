@@ -1,0 +1,51 @@
+*{
+	font-family:sans-serif;
+}
+button{
+    padding: 0.4rem;
+    width: 10%;
+    background: black;
+    color:  white; 
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 300;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+table {
+    font-family: sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 10px;
+}
+tr:nth-child(even) {
+    background-color: white;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+}
+.submitcontinue {
+    margin-top: 2rem;
+    padding: 0.4rem;
+    width: 100%;
+    background: black;
+    cursor: pointer;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 300;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.submitcontinue:hover {
+    letter-spacing: 0.5px;
+    background: white;
+    color: black;
+    border: 1px solid black;
+}
