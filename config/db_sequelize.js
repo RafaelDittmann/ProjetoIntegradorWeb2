@@ -3,7 +3,8 @@ const Sequelize = require('sequelize');
 //const sequelize = new Sequelize('database', 'username', 'password', {
 const sequelize = new Sequelize('web2_dbs', 'postgres', 'masterkey', {
     host: 'localhost',
-    dialect: 'postgres'
+    dialect: 'postgres',
+    port : 5432
 });
 
 var db = {};
