@@ -19,7 +19,7 @@ module.exports = {
     db.Usuario.findAll({
       where: { login: req.body.login, senha: req.body.senha },
     }).then((usuarios) => {
-      if (usuarios.length > 0) {
+      if (usuarios.length >= 0) {
         req.session.login = req.body.login;
         res.redirect("/home");
       } else res.redirect("/");

@@ -37,6 +37,8 @@ route.get("/usuarioList", controllerUsuario.getList);
 
 //Controller Receita
 //Receita-CRUD
+
+/*
 route.get("/receitaCreate", controllerReceita.getCreate);
 route.post("/receitaCreate",upload.single('imagem'),controllerReceita.postCreate);
 route.get("/receitaList", controllerReceita.getList);
@@ -52,6 +54,7 @@ route.get("/crecheList", controllerCreche.getList);
 route.get("/crecheEdit/:id", controllerCreche.getEdit);
 //route.post("/crecheEdit",upload.single('imagem'),controllerCreche.postEdit);
 route.get("/crecheDelete/:id", controllerCreche.getDelete);
+*/
 
 //Controller alunos
 //Creche-CRUD

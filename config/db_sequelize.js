@@ -4,7 +4,7 @@ const Sequelize = require('sequelize');
 const sequelize = new Sequelize('web2_dbs', 'postgres', 'masterkey', {
     host: 'localhost',
     dialect: 'postgres',
-    port : 5432
+    port : 5433//5432 ou 5433
 });
 
 var db = {};
