@@ -45,16 +45,17 @@ route.get("/receitaList", controllerReceita.getList);
 route.get("/receitaEdit/:id", controllerReceita.getEdit);
 route.post("/receitaEdit",upload.single('imagem'),controllerReceita.postEdit);
 route.get("/receitaDelete/:id", controllerReceita.getDelete);
+*/
 
 //Controller Creche
 //Creche-CRUD
 route.get("/crecheCreate", controllerCreche.getCreate);
-//route.post("/crecheCreate",upload.single('imagem'),controllerCreche.postCreate);
+route.post("/crecheCreate",controllerCreche.postCreate);
 route.get("/crecheList", controllerCreche.getList);
 route.get("/crecheEdit/:id", controllerCreche.getEdit);
-//route.post("/crecheEdit",upload.single('imagem'),controllerCreche.postEdit);
+route.post("/crecheEdit",controllerCreche.postEdit);
 route.get("/crecheDelete/:id", controllerCreche.getDelete);
-*/
+
 
 //Controller alunos
 //Creche-CRUD
